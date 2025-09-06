@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
           XXXXXXX,    PT_Z,    KC_X,    KC_C,    KC_D,    KC_V,       KC_K,    KC_H, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
      // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                      GO_NAV,  KC_SPC, KC_BSPC,    GO_MOUS, OS_LSFT,
+                                      GO_NAV,  KC_SPC, KC_BSPC,    GO_BASE, OS_LSFT,
                                               KC_LALT, KC_LGUI,    KC_ENT
      //                            ╰───────────────────────────╯ ╰──────────────────╯
      ),
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
           KC_LSFT,    PT_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
      // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                      GO_NAV,  KC_SPC, KC_BSPC,    GO_MOUS, OS_LSFT,
+                                      GO_NAV,  KC_SPC, KC_BSPC,    GO_BASE, OS_LSFT,
                                               KC_LALT, KC_LGUI,     KC_ENT
      //                            ╰───────────────────────────╯ ╰──────────────────╯
      ),
