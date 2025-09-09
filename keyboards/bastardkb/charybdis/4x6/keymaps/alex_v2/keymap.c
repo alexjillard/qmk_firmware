@@ -37,7 +37,7 @@ enum charybdis_keymap_layers {
 
 #define PD_BASE PDF(BASE)
 #define PD_GAME PDF(GAMING)
-#define PT_A LT(MOUSE, KC_A)
+#define PT_Z LT(MOUSE, KC_Z)
 #define PT_SLSH LT(MOUSE, KC_SLSH)
 
 
@@ -49,9 +49,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
            KC_TAB,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,       KC_J,    KC_L,    KC_U,    KC_Y, KC_SCLN, KC_MINS,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          KC_LCTL,    PT_A,    KC_R,    KC_S,    KC_T,    KC_G,       KC_M,    KC_N,    KC_E,    KC_I,    KC_O, KC_QUOT,
+          KC_LCTL,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,       KC_M,    KC_N,    KC_E,    KC_I,    KC_O, KC_QUOT,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-           GO_NUM,    KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,       KC_K,    KC_H, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
+           GO_NUM,    PT_Z,    KC_X,    KC_C,    KC_D,    KC_V,       KC_K,    KC_H, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
      // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                       GO_NAV,  KC_SPC, KC_BSPC,    GO_BASE, OS_LSFT,
                                               KC_LALT, KC_LGUI,    KC_ENT
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
           KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,       KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
+          KC_LSFT,    PT_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
      // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                       GO_NAV,  KC_SPC, KC_BSPC,    GO_BASE, OS_LSFT,
                                               KC_LALT, KC_LGUI,     KC_ENT
