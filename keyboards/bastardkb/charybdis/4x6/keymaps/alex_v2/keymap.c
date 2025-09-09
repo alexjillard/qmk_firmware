@@ -37,7 +37,7 @@ enum charybdis_keymap_layers {
 
 #define PD_BASE PDF(BASE)
 #define PD_GAME PDF(GAMING)
-#define PT_Z LT(MOUSE, KC_Z)
+#define PT_A LT(MOUSE, KC_A)
 #define PT_SLSH LT(MOUSE, KC_SLSH)
 
 
@@ -49,9 +49,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
            KC_TAB,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,       KC_J,    KC_L,    KC_U,    KC_Y, KC_SCLN, KC_MINS,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          KC_LCTL,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,       KC_M,    KC_N,    KC_E,    KC_I,    KC_O, KC_QUOT,
+          KC_LCTL,    PT_A,    KC_R,    KC_S,    KC_T,    KC_G,       KC_M,    KC_N,    KC_E,    KC_I,    KC_O, KC_QUOT,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          XXXXXXX,    PT_Z,    KC_X,    KC_C,    KC_D,    KC_V,       KC_K,    KC_H, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
+           GO_NUM,    KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,       KC_K,    KC_H, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
      // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                       GO_NAV,  KC_SPC, KC_BSPC,    GO_BASE, OS_LSFT,
                                               KC_LALT, KC_LGUI,    KC_ENT
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
           KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,       KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          KC_LSFT,    PT_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
+          KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, PT_SLSH,  GO_SYM,
      // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                       GO_NAV,  KC_SPC, KC_BSPC,    GO_BASE, OS_LSFT,
                                               KC_LALT, KC_LGUI,     KC_ENT
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
           _______, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,    KC_BSLS, KC_LPRN, KC_RPRN, KC_PIPE, KC_PLUS, XXXXXXX,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          XXXXXXX, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,    XXXXXXX, KC_LBRC, KC_RBRC,  KC_GRV,  KC_EQL,  GO_NUM,
+          _______, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,    XXXXXXX, KC_LBRC, KC_RBRC,  KC_GRV,  KC_EQL,  GO_NUM,
      // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                      _______, _______, _______,    GO_BASE, _______,
                                               _______, _______,    _______
@@ -93,10 +93,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
           _______, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,    KC_LBRC,   KC_P4,   KC_P5,   KC_P6, KC_PDOT, KC_LBRC,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,   KC_P1,   KC_P2,   KC_P3, KC_PENT,  GO_SYM,
+           GO_SYM, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       KC_0,   KC_P1,   KC_P2,   KC_P3, KC_PENT,  GO_SYM,
      // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                      _______, _______, _______,    GO_BASE, _______,
-                                              _______, _______,      KC_P0
+                                              _______, _______,    _______
      //                            ╰───────────────────────────╯ ╰──────────────────╯
      ),
   [NAV] = LAYOUT(
@@ -134,13 +134,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           XXXXXXX, XXXXXXX,S_D_RMOD,DPI_RMOD, DPI_MOD, S_D_MOD,    S_D_MOD, DPI_MOD,DPI_RMOD,S_D_RMOD, XXXXXXX, XXXXXXX,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤zv
+          _______, SNIPING, DRGSCRL, MS_BTN2, MS_BTN1, XXXXXXX,    XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, XXXXXXX,
      // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          _______, XXXXXXX, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,    XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, XXXXXXX,
-     // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-          XXXXXXX, SNIPING, DRGSCRL, MS_BTN2, MS_BTN1, XXXXXXX,    XXXXXXX, MS_BTN1, MS_BTN2, DRGSCRL, SNIPING, XXXXXXX,
+          XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, XXXXXXX,    XXXXXXX, MS_BTN1, MS_BTN2, DRGSCRL, SNIPING, XXXXXXX,
      // ╰──────────────────────────────────────────────────────┤ ├─────────────────────────────────────────────────────╯
-                                     _______, _______, _______,    GO_BASE, _______,
-                                              _______, _______,    MS_BTN1
+                                     _______, MS_BTN1, _______,    GO_BASE, _______,
+                                              _______, _______,    _______
      //                            ╰───────────────────────────╯ ╰──────────────────╯
      ),
 };
